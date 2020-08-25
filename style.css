@@ -34,6 +34,7 @@ a {
     position: absolute;
     right: -20%;
 }
+
 .menu-line {
     display: none;
     cursor: pointer;
@@ -60,10 +61,12 @@ a {
     flex-wrap: wrap;
     padding: 20px 0;
 }
-.active_scroll{
+
+.active-scroll {
     transition: all .5s;
     background: #653eb39c;
 }
+
 .navbar {
     display: flex;
     align-items: center;
@@ -195,6 +198,7 @@ a {
     align-items: center;
     flex-wrap: wrap;
     padding: 35px 20px;
+    height: 300px;
 }
 
 .slide-box {
@@ -205,6 +209,11 @@ a {
     clip-path: circle(178px at -28px 122px);
     border-left: 1px solid;
     border-radius: 242px;
+    margin-bottom: -100%;
+}
+
+.slid-top {
+    margin-bottom: 0;
 }
 
 .slide-box-title {
@@ -458,8 +467,33 @@ a {
     background-size: 400% 400%;
     margin: 10px;
     min-width: 320px;
+    height: min-content;
+    border-radius: 10px;
 }
+.left{
+    transition: all 1s;
+    opacity: 0;
+    visibility: hidden;
 
+}
+.testemonal-left{
+    transition: opacity 2s;
+    opacity: 1;
+    visibility: visible;
+
+}
+.right{
+    transition: all 1s;
+    opacity: 0;
+    visibility: hidden;
+
+}
+.testemonal-right{
+    transition: opacity 2s;
+    opacity: 1;
+    visibility: visible;
+
+}
 @keyframes change {
     0% {
         background-position: 0 50%;
@@ -589,6 +623,23 @@ a {
         margin: 0 auto;
     }
 
+    .everyone-container-slide {
+        height: auto;
+    }
+    .slide-box {
+        transition: .5s;
+        width: 15%;
+        padding: 25px;
+        min-width: 200px;
+        clip-path: circle(178px at -28px 122px);
+        border-left: 1px solid;
+        border-radius: 242px;
+        margin-top: -130%;
+    }
+
+    .slid-top {
+        margin-top: 0;
+    }
     .discounts-container-box-form {
         margin: 0 auto;
     }
