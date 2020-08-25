@@ -209,7 +209,7 @@ a {
     clip-path: circle(178px at -28px 122px);
     border-left: 1px solid;
     border-radius: 242px;
-    margin-bottom: -100%;
+    margin-bottom: -200%;
 }
 
 .slid-top {
@@ -631,14 +631,17 @@ a {
         width: 15%;
         padding: 25px;
         min-width: 200px;
-        clip-path: circle(178px at -28px 122px);
         border-left: 1px solid;
-        border-radius: 242px;
-        margin-top: -130%;
+        margin-bottom: -200%;
+        border-left: 0 solid;
+        box-shadow: 0 0 14px -7px #000000ad;
+        border-radius: 10px;
+        clip-path: circle(350px at -28px 122px);
+
     }
 
     .slid-top {
-        margin-top: 0;
+        margin: 10px;
     }
     .discounts-container-box-form {
         margin: 0 auto;
