@@ -470,30 +470,35 @@ a {
   height: min-content;
   border-radius: 10px;
 }
-.left{
+
+.left {
   transition: all 1s;
   opacity: 0;
   visibility: hidden;
 
 }
-.testemonal-left{
+
+.testemonal-left {
   transition: opacity 2s;
   opacity: 1;
   visibility: visible;
 
 }
-.right{
+
+.right {
   transition: all 1s;
   opacity: 0;
   visibility: hidden;
 
 }
-.testemonal-right{
+
+.testemonal-right {
   transition: opacity 2s;
   opacity: 1;
   visibility: visible;
 
 }
+
 @keyframes change {
   0% {
     background-position: 0 50%;
@@ -569,6 +574,152 @@ a {
   margin: 0 5px;
   line-height: 20px;
 }
+
+@mixin text {
+  @for $i from 3 through 7 {
+    &:nth-child(#{$i}) {
+      font-size: 15px;
+      font-family: "Roboto", sans-serif;
+      color: rgb(62, 62, 62);
+      font-weight: bold;
+      line-height: 1.467;
+      text-align: left;
+    }
+  }
+}
+
+@mixin input {
+  @for $i from 1 through 3 {
+    &:nth-child(#{$i}) {
+      border-radius: 3px;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+      background-color: white;
+      border: 0 solid;
+      padding: 10px;
+      outline: none;
+      border-bottom: 1px solid #e1e1e1;
+      width: 28%;
+      margin: 5px 5px;
+    }
+  }
+}
+
+@mixin inputs {
+  display: block;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+  background-color: white;
+  border: 0 solid;
+  padding: 10px;
+  outline: none;
+  border-bottom: 1px solid #e1e1e1;
+  width: 99%;
+  margin: 5px 5px;
+  box-sizing: border-box;
+}
+
+.contact {
+  padding: 135px 0;
+
+  .contact-info {
+    width: 80%;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 40px;
+      font-family: "Roboto", sans-serif;
+      color: rgb(62, 62, 62);
+      line-height: 0.3;
+      text-align: left;
+      margin: 0 10px;
+      padding: 10px;
+    }
+  }
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 45px 0;
+
+  .contact-text {
+    width: 35%;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    min-width: 300px;
+
+    p {
+      &:nth-child(1) {
+        font-size: 22px;
+        font-family: "Roboto", sans-serif;
+        color: rgb(62, 62, 62);
+        line-height: 0.545;
+        text-align: left;
+        border-bottom: 1px solid #e1e1e1;
+        padding: 10px 0;
+      }
+
+      &:nth-child(2) {
+        font-size: 15px;
+        font-family: "Roboto", sans-serif;
+        color: rgb(140, 140, 140);
+        line-height: 1.467;
+        text-align: left;
+        margin: 20px 0;
+      }
+
+      @include text
+    }
+  }
+
+  .contact-form {
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    min-width: 300px;
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+
+
+    p {
+      font-size: 22px;
+      font-family: "Roboto", sans-serif;
+      color: rgb(62, 62, 62);
+      line-height: 0.545;
+      text-align: left;
+      margin: 25px 5px;
+    }
+
+    .contact-box {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .contact-box input {
+      @include input
+    }
+
+    .contact-box-inp input {
+      @include inputs
+    }
+    .sub{
+      border-radius: 3px;
+      background-color: #fb4381;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
+      padding: 15px;
+      border: 0 solid;
+      margin: 5px 5px;
+      color: white;
+    }
+  }
+}
+
 
 @media all and (max-width: 850px) {
   .hamburger {

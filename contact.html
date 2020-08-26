@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<header class="header-container scroll">
+    <div class="header">
+        <div class="logo">
+            <img src="image/icon.png" alt="">
+            <span><a href="">TripWay</a></span>
+        </div>
+        <nav class="navigation">
+            <ul class="navbar hamburger-active">
+                <li><a href="">home</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">destinations</a></li>
+                <li><a href="">gallery</a></li>
+                <li><a href="">blog</a></li>
+                <li><a href="">contacts</a></li>
+            </ul>
+        </nav>
+        <input type="checkbox" id="hamburger" class="nav-checkbox">
+        <label for="hamburger" class="hamburger">
+            <span class="menu-line line-top"></span>
+            <span class="menu-line line-middle"></span>
+            <span class="menu-line line-bottom"></span>
+            <div class="hamburger-menu scroll ">
+                <ul class="hamburger-active">
+                    <li class="active"><a href="">home</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">destinations</a></li>
+                    <li><a href="">gallery</a></li>
+                    <li><a href="">blog</a></li>
+                    <li><a href="">contacts</a></li>
+                </ul>
+            </div>
+        </label>
+    </div>
+</header>
+<main>
+    <section class="contact">
+        <div class="contact-info">
+            <h2 class="contact-title">Contacts</h2>
+            <div class="contact-container">
+                <div class="contact-text">
+                    <p>Contact info</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi beatae deserunt dolor eligendi
+                        fugiat incidunt iusto necessitatibus quibusdam quo sed! Atque officia pariatur sed totam
+                        voluptatibus.</p>
+                    <p>The Company Name Inc. 9870 St Vincent Place, Glasgow, DC 45 Fr </p>
+                    <p>The Company Name Inc.</p>
+                    <p>9870 St Vincent Place, Glasgow, DC 56 Fr 45.</p>
+                    <p>Telephone: +1 800 603 6035 FAX: +1 800 889 9898</p>
+                    <p>E-mail: <span><a href="#">mail@demolink.org</a></span></p>
+                </div>
+                <form class="contact-form">
+                    <p>Contact form</p>
+                    <div class="contact-box">
+                        <input type="text" placeholder="Your name" name="your_name">
+                        <input type="email" placeholder="Your email" name="your_email">
+                        <input type="tel" placeholder="Your phone" name="your_phone">
+                    </div>
+                    <div class="contact-box-inp">
+                        <label><input type="text" placeholder="Website" name="your_website"></label>
+                        <label><input type="text" placeholder="Your comment" name="your_comment"></label>
+                    </div>
+                    <label><input type="submit" name="submit" value="Send My Comment" class="sub"></label>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <section class="footer">
+        <div class="footer-container">
+            <div class="footer-navigation">
+                <nav class="navigation">
+                    <ul class="navbar hamburger-active">
+                        <li><a href="">home</a></li>
+                        <li><a href="">about</a></li>
+                        <li><a href="">destinations</a></li>
+                        <li><a href="">gallery</a></li>
+                        <li><a href="">blog</a></li>
+                        <li><a href="">contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-svg-box">
+                <a href=""><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="7px" height="15px">
+                    <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                          d="M4.655,14.993 L1.546,14.993 L1.546,7.996 L-0.009,7.996 L-0.009,5.240 L1.546,5.240 L1.546,3.585 C1.546,1.338 2.423,0.000 4.915,0.000 L6.990,0.000 L6.990,2.756 L5.694,2.756 C4.723,2.756 4.659,3.142 4.659,3.860 L4.655,5.240 L7.006,5.240 L6.730,7.996 L4.655,7.996 L4.655,14.993 Z"/>
+                </svg></a>
+                <a href=""><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="12px" height="15px">
+                    <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                          d="M6.363,0.005 C2.135,0.005 0.004,2.935 0.004,5.379 C0.004,6.858 0.583,8.175 1.826,8.665 C2.030,8.746 2.212,8.668 2.271,8.450 C2.312,8.299 2.410,7.918 2.453,7.759 C2.513,7.544 2.490,7.468 2.325,7.280 C1.967,6.872 1.738,6.342 1.738,5.593 C1.738,3.419 3.420,1.473 6.119,1.473 C8.508,1.473 9.821,2.885 9.821,4.769 C9.821,7.250 8.686,9.344 7.000,9.344 C6.069,9.344 5.372,8.600 5.596,7.686 C5.863,6.597 6.381,5.420 6.381,4.634 C6.381,3.930 5.990,3.342 5.181,3.342 C4.230,3.342 3.465,4.294 3.465,5.569 C3.465,6.381 3.749,6.930 3.749,6.930 C3.749,6.930 2.775,10.919 2.604,11.618 C2.264,13.010 2.553,14.715 2.578,14.887 C2.592,14.989 2.728,15.014 2.789,14.937 C2.877,14.826 4.010,13.473 4.396,12.121 C4.505,11.738 5.022,9.756 5.022,9.756 C5.331,10.327 6.234,10.829 7.195,10.829 C10.056,10.829 11.996,8.308 11.996,4.933 C11.996,2.381 9.761,0.005 6.363,0.005 Z"/>
+                </svg></a>
+                <a href=""><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="16px" height="13px">
+                    <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                          d="M16.000,1.533 C15.411,1.794 14.778,1.971 14.114,2.051 C14.792,1.645 15.313,1.001 15.558,0.234 C14.923,0.611 14.221,0.884 13.473,1.031 C12.875,0.393 12.021,-0.006 11.077,-0.006 C9.264,-0.006 7.795,1.464 7.795,3.277 C7.795,3.534 7.823,3.785 7.880,4.025 C5.151,3.889 2.733,2.581 1.114,0.595 C0.831,1.079 0.669,1.644 0.669,2.245 C0.669,3.384 1.249,4.389 2.129,4.978 C1.591,4.961 1.085,4.813 0.643,4.567 C0.643,4.581 0.643,4.595 0.643,4.609 C0.643,6.199 1.774,7.526 3.276,7.827 C3.000,7.903 2.710,7.943 2.411,7.943 C2.199,7.943 1.994,7.922 1.793,7.884 C2.211,9.188 3.423,10.137 4.859,10.163 C3.736,11.044 2.321,11.569 0.783,11.569 C0.518,11.569 0.256,11.554 -0.000,11.523 C1.452,12.455 3.178,12.999 5.032,12.999 C11.069,12.999 14.371,7.996 14.371,3.658 C14.371,3.515 14.368,3.374 14.362,3.232 C15.003,2.770 15.560,2.192 16.000,1.533 Z"/>
+                </svg></a>
+                <a href=""><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="16px" height="14px">
+                    <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                          d="M15.936,2.597 C16.055,1.918 16.053,1.219 15.639,0.690 C15.061,-0.051 13.832,-0.079 12.990,0.053 C12.304,0.158 9.988,1.195 9.199,3.677 C10.596,3.569 11.328,3.778 11.194,5.339 C11.137,5.991 10.813,6.705 10.449,7.390 C10.030,8.181 9.244,9.732 8.214,8.615 C7.286,7.607 7.356,5.683 7.143,4.401 C7.025,3.683 6.900,2.787 6.668,2.047 C6.468,1.412 6.008,0.644 5.446,0.478 C4.843,0.299 4.098,0.579 3.660,0.840 C2.265,1.670 1.203,2.853 -0.004,3.828 L-0.004,3.919 C0.235,4.151 0.300,4.531 0.652,4.582 C1.482,4.707 2.273,3.799 2.826,4.743 C3.161,5.321 3.266,5.954 3.481,6.576 C3.768,7.406 3.990,8.308 4.225,9.262 C4.623,10.877 5.112,13.290 6.489,13.882 C7.192,14.183 8.247,13.780 8.782,13.457 C10.230,12.590 11.359,11.330 12.325,10.048 C14.533,7.015 15.752,3.579 15.936,2.597 Z"/>
+                </svg></a>
+                <a href=""><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="15px" height="15px">
+                    <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                          d="M12.102,-0.002 L2.898,-0.002 C1.299,-0.002 -0.002,1.299 -0.002,2.898 L-0.002,5.960 L-0.002,12.103 C-0.002,13.702 1.299,15.002 2.898,15.002 L12.102,15.002 C13.701,15.002 15.002,13.702 15.002,12.103 L15.002,5.960 L15.002,2.898 C15.002,1.299 13.701,-0.002 12.102,-0.002 ZM12.741,1.991 L13.000,1.990 L13.000,2.248 L13.000,3.982 L11.018,3.989 L11.011,1.996 L12.741,1.991 ZM7.500,4.990 C9.580,4.990 10.010,6.944 10.010,7.501 C10.010,8.884 8.884,10.010 7.500,10.010 C6.116,10.010 4.990,8.884 4.990,7.501 C4.990,6.944 5.419,4.990 7.500,4.990 ZM13.013,11.672 C13.013,12.412 12.408,13.013 11.664,13.013 L3.341,13.013 C2.597,13.013 1.992,12.412 1.992,11.672 L1.992,5.987 L3.947,5.987 C3.766,6.431 3.664,7.038 3.664,7.546 C3.664,9.657 5.391,11.375 7.515,11.375 C9.638,11.375 11.366,9.657 11.366,7.546 C11.366,7.038 11.263,6.431 11.082,5.987 L13.013,5.987 L13.013,11.672 Z"/>
+                </svg></a>
+            </div>
+        </div>
+        <div class="footer-text-container">
+            <p class="footer-text">St Stephen's House, Colston Ave, Bristol BS1 4ST, UK  /  Teleph</p>
+            <p class="footer-inf">© 2015 TripWay - Material UI Template.</p>
+        </div>
+    </section>
+</footer>
+</body>
+</html>
