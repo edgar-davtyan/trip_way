@@ -41,6 +41,7 @@ function slide_box() {
         }
     }
 }
+
 slide_box();
 
 function testimonials_box() {
@@ -74,5 +75,4 @@ function testimonials_box() {
 }
 
 testimonials_box();
-
 

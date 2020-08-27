@@ -592,6 +592,7 @@ a {
   margin: 45px 0;
 }
 .contact-container .contact-text {
+  order: 2;
   width: 35%;
   margin: 0 auto;
   padding: 10px;
@@ -656,6 +657,7 @@ a {
   text-align: left;
 }
 .contact-container .contact-form {
+  order: 1;
   width: 60%;
   margin: 0 auto;
   padding: 10px;
@@ -688,7 +690,7 @@ a {
   outline: none;
   border-bottom: 1px solid #e1e1e1;
   width: 28%;
-  margin: 5px 5px;
+  margin: 5px auto;
 }
 .contact-container .contact-form .contact-box input:nth-child(2) {
   border-radius: 3px;
@@ -699,7 +701,7 @@ a {
   outline: none;
   border-bottom: 1px solid #e1e1e1;
   width: 28%;
-  margin: 5px 5px;
+  margin: 5px auto;
 }
 .contact-container .contact-form .contact-box input:nth-child(3) {
   border-radius: 3px;
@@ -710,7 +712,7 @@ a {
   outline: none;
   border-bottom: 1px solid #e1e1e1;
   width: 28%;
-  margin: 5px 5px;
+  margin: 5px auto;
 }
 .contact-container .contact-form .contact-box-inp input {
   display: block;
@@ -722,7 +724,7 @@ a {
   outline: none;
   border-bottom: 1px solid #e1e1e1;
   width: 99%;
-  margin: 5px 5px;
+  margin: 5px auto;
   box-sizing: border-box;
 }
 .contact-container .contact-form .sub {
@@ -731,7 +733,7 @@ a {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
   padding: 15px;
   border: 0 solid;
-  margin: 5px 5px;
+  margin: 5px auto;
   color: white;
 }
 
@@ -854,6 +856,18 @@ a {
   }
 
   .testimonials-box {
+    width: 100%;
+  }
+
+  .contact-container .contact-form .contact-box input:nth-child(1) {
+    width: 100%;
+  }
+
+  .contact-container .contact-form .contact-box input:nth-child(2) {
+    width: 100%;
+  }
+
+  .contact-container .contact-form .contact-box input:nth-child(3) {
     width: 100%;
   }
 }
